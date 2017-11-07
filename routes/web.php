@@ -23,7 +23,13 @@ Route::get('blog/{category}/{slug}', 'FrontController@postshow')->name('blog.pos
 
 
 //Back: Post
-Route::resource('post', 'PostController');
+//Route::resource('post', 'PostController');
 
 //Authentication
 Auth::routes();
+
+Route::group(['prefix' => 'admin'], function(){
+    Route::get('/', 'PanelController@index');
+    Route::get('/panel', 'PanelController@panel')->name('panel');
+    //Route::resource('/post', 'PostController');
+});

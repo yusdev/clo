@@ -60,6 +60,9 @@ color: white;
   background-color: black;
   color: white;
 }
+.footer-content p{
+  text-align: center;
+}
 
 /* HOME * SUSCRIPCION --------------------------------------------------------*/
 
@@ -238,4 +241,24 @@ color: white;
 
 .post-author{
   text-align: center;
+}
+
+/* LOGIN FORM ----------------------------------------------------------------*/
+.login-container{
+  height: 600px;
+  padding-top: 100px;
+}
+.login-form{
+  width: 60%;
+  margin: auto;
+  background-color: #ffd;
+  padding: 35px;
+}
+.login-form input[name="email"], .login-form input[name="password"]{
+  height: 40px;
+  border: 1px #E1E1E1 solid;
+  font-weight: 100;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 20px;
 }

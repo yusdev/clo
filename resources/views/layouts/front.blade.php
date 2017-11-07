@@ -43,7 +43,7 @@
       {{-- FOOTER ----------------------------------------------------------- --}}
 
       <footer class="footer">
-        <div class="">
+        <div class="footer-content">
               <p>CLOSHOP 2017 Copyright - Todos los derechos reservados</p>
               <p>Developed by CLO</p>
         </div>
