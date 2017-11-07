@@ -18,14 +18,24 @@ $factory->define(App\User::class, function (Faker $faker) {
 
     return [
         'name' => $faker->name,
+        'lastname' => $faker->lastname,
         'email' => $faker->unique()->safeEmail,
+        'role' => $name = $faker->randomElement(['admin', 'editor', 'author']),
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
     ];
 });
 
+//Category model factory
+$factory->define(App\Category::class, function (Faker $faker){
+  return [
+      'name' => $name = $faker->randomElement(['moda', 'tecnologia', 'turismo']),
+      'slug' => str_slug($name)
+  ];
+});
+
 // Post Model Factory
-$factory->define(App\Post::class, function (Faker\Generator $faker) {
+$factory->define(App\Post::class, function (Faker $faker) {
     $title = $faker->name;
     return [
         'title' => $title,
