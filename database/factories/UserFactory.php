@@ -23,3 +23,15 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+// Post Model Factory
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    $title = $faker->name;
+    return [
+        'title' => $title,
+        'slug'  => str_slug($title),
+        'image' => 'https://dummyimage.com/300',
+        'abstract' => implode(' ', $faker->paragraphs(1)),
+        'description' => implode(' ', $faker->paragraphs(5)),
+    ];
+});
