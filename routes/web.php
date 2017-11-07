@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Front
+Route::get('/', 'FrontController@index')->name('index');
+Route::get('nosotros', 'FrontController@aboutus')->name('aboutus');
+Route::get('contacto', 'FrontController@contactus')->name('contactus');
+Route::post('contacto', 'FrontController@contactus_post');
+Route::get('blog', 'FrontController@blog')->name('blog');
+
 
 Auth::routes();
 
-Route::resource('/blog', 'PostController');
+//Route::resource('/blog', 'PostController');
 
 Route::get('/home', 'HomeController@index')->name('home');

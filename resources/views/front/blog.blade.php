@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>blog</title>
-  </head>
-  <body>
+@extends('layouts.front')
 
-    @forelse($posts as $post)
-        <img width="60px" src="{{ $post->image }}">
-        <a href="#">{{ $post->title }}</a>
-        {{ $post->category->name }}
-        {{ $post->abstract }}
+  @section('content')
 
-    @empty
+  <div class="post-container">
 
-        <p>No hay productos cargados</p>
+    @foreach($posts as $post)
+    <div class="post">
+      <article>
+        <a href="#"><img src="{{$post->image}}"></a>
+        <section>
+          <a href="#">{{$post->title}}</a>
+          <p>{{$post->abstract}}</p>
+          <a class="button" href="#">LEER MAS</a>
+        </section>
+      </article>
+    </div>
+   @endforeach
+  </div>
 
-    @endforelse
+<div class="paginate">
+    {{ $posts->links() }}
+</div>
 
 
-
-
-  </body>
-</html>
-<tbody>
+  @endsection
