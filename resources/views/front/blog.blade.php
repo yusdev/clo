@@ -4,7 +4,7 @@
 
   <div class="post-container">
 
-    @foreach($posts as $post)
+    @foreach($posts as $post) 
     <div class="post">
       <article>
         <a href="{{ route('blog.postshow', ['post'=>$post->category->name,'slug'=>$post->slug])}}"><img src="{{$post->image}}"></a>
