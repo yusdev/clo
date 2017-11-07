@@ -206,3 +206,36 @@ color: white;
   padding-left: 10px;
   padding-top: 10px;
 }
+
+/* DESCRIPCION POST  ---------------------------------------------------------------*/
+.postshow-container{
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+}
+.postshow-container img{
+  border: 2px dashed #ffc840;
+  padding: 5px;
+
+}
+.post-title, .post-abstract{
+  text-align: center;
+}
+
+.post-title{
+  font-size: 40px;
+}
+
+.post-content {
+  width: 85%;
+  margin: auto;
+  padding: 26px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+  position:relative;
+  bottom: 185px;
+}
+
+.post-author{
+  text-align: center;
+}

@@ -7,11 +7,11 @@
     @foreach($posts as $post)
     <div class="post">
       <article>
-        <a href="#"><img src="{{$post->image}}"></a>
+        <a href="{{ route('blog.postshow', ['post'=>$post->category->name,'slug'=>$post->slug])}}"><img src="{{$post->image}}"></a>
         <section>
-          <a href="#">{{$post->title}}</a>
+          <a href="{{ route('blog.postshow', ['post'=>$post->category->name,'slug'=>$post->slug])}}">{{$post->title}}</a>
           <p>{{$post->abstract}}</p>
-          <a class="button" href="#">LEER MAS</a>
+          <a class="button" href="{{ route('blog.postshow', ['post'=>$post->category->name,'slug'=>$post->slug])}}">LEER MAS</a>
         </section>
       </article>
     </div>

@@ -36,5 +36,10 @@ class FrontController extends Controller
     return redirect('contacto')->withInput();
   }
 
+  public function postshow($category, $slug){
+    $post = Post::where('slug', $slug)->first();
+    return view('front.postshow')->with('post', $post);
+  }
+
 
 }

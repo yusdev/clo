@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/front/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/front/styles.css">
 
     <title>Closhop - Bienvenidos!</title>
   </head>
@@ -19,7 +19,7 @@
     <header class="header">
       <div class="menu">
         <div id="logo">
-          <a href="{{route('index')}}"><img src="images/logocloshop.png" alt="logo-closhop"></a>
+          <a href="{{route('index')}}"><img src="/images/logocloshop.png" alt="logo-closhop"></a>
         </div>
         <nav class="menu-nav">
           <ul>

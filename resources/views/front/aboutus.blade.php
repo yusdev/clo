@@ -16,7 +16,7 @@
       <div class="">
         ¿Sos diseñador/a y querés compartir tu historia? <a href="{{route('contactus')}}">Contáctanos</a>
         <br><vr>
-        ¿Querés enterarte de todas las notas? <a href="{{route('home')}}">Suscribite</a>
+        ¿Querés enterarte de todas las notas? <a href="{{route('index')}}">Suscribite</a>
       </div>
 
       </p>

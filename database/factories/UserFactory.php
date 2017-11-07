@@ -40,7 +40,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
     return [
         'title' => $title,
         'slug'  => str_slug($title),
-        'image' => 'https://dummyimage.com/300',
+        'image' => 'https://dummyimage.com/600x400',
         'abstract' => implode(' ', $faker->paragraphs(1)),
         'description' => implode(' ', $faker->paragraphs(5)),
     ];
