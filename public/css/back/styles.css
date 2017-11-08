@@ -1,13 +1,35 @@
 .panel-menu-container{
   height:100vh;
-  width: 300px;
-  padding: 20px;
-  background-color: black;
-  color: white;
+  width: 200px;
+  background-color: #23282d;
+  padding-top: 10px;
 }
-
+.panel-menu ul{
+  padding-left:0;
+}
+.panel-menu ul li{
+  margin-top:10px;
+  margin-bottom:10px;
+}
 .panel-menu a{
   color: white;
-  padding: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.sub-panel-menu{
+  background-color: #32373c;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+.sub-panel-menu a{
+  font-size: 14px;
+  padding-left:25px;
+}
 
+.panel-menu-container, .panel-content{
+  float:left;
+}
+
+.footer {
+  clear:both;
 }

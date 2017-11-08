@@ -44,8 +44,8 @@
 
       <footer class="footer">
         <div class="footer-content">
-              <p>CLOSHOP 2017 Copyright - Todos los derechos reservados</p>
-              <p>Developed by CLO</p>
+          <p> 2017 © CLOSHOP.  Todos los derechos reservados</p>
+          <p>by CLO</p>
         </div>
       </footer>
 

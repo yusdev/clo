@@ -31,5 +31,6 @@ Auth::routes();
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'PanelController@index');
     Route::get('/panel', 'PanelController@panel')->name('panel');
+    Route::resource('/usuarios', 'UserController');
     //Route::resource('/post', 'PostController');
 });
