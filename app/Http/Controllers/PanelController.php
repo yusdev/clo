@@ -9,7 +9,7 @@ class PanelController extends Controller
 {
     public function index()
     {
-      return view('back.panel');
+      return view('back.dashboard');
     }
 
 

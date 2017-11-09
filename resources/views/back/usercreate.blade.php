@@ -1,9 +1,16 @@
-@extends('back.panel')
+@extends('layouts.back')
 
-@section('sub-content')
-<div class="panel panel-default">
-    <div class="panel-heading">Register</div>
+@section('content')
 
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Nuevo usuario</h1>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+    <div class="panel panel-default">
     <div class="panel-body">
         <form class="form-horizontal" method="POST" action="{{ route('usuarios.create') }}">
             {{ csrf_field() }}
@@ -104,4 +111,6 @@
       </div>
   </div>
 </div>
+</div>
+
 @endsection
