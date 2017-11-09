@@ -26,6 +26,8 @@
             <li><a href="{{route('index')}}">INICIO</a></li>
             <li><a href="{{route('aboutus')}}">NOSOTROS</a></li>
             <li><a href="{{route('blog')}}">BLOG & SHOP</a></li>
+            <li><a href="#">ELEGIDOS BY CLO</a></li>
+            <li><a href="{{route('faqs')}}">FAQs</a></li>
             <li><a href="{{route('contactus')}}">CONTACTO</a></li>
           </ul>
         </nav>

@@ -3,6 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\View;
 
 class AccessPanel
 {
@@ -15,6 +17,9 @@ class AccessPanel
      */
     public function handle($request, Closure $next)
     {
-      return $next($request);
+        if(Auth::check()) {
+          return $next($request);
+        }
+        return redirect('/login');
     }
 }

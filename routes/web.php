@@ -16,6 +16,7 @@ Route::get('/', 'FrontController@index')->name('index');
 Route::get('nosotros', 'FrontController@aboutus')->name('aboutus');
 Route::get('contacto', 'FrontController@contactus')->name('contactus');
 Route::post('contacto', 'FrontController@contactus_post');
+Route::get('preguntas-frecuentes', 'FrontController@faqs')->name('faqs');
 Route::get('blog', 'FrontController@blog')->name('blog');
 Route::get('blog/{category}', 'FrontController@blog');
 Route::get('blog/{category}/{slug}', 'FrontController@postshow')->name('blog.postshow');
@@ -29,8 +30,10 @@ Route::get('blog/{category}/{slug}', 'FrontController@postshow')->name('blog.pos
 Auth::routes();
 
 Route::group(['prefix' => 'admin'], function(){
+   Route::group(['middleware'=>'access'], function() {
     Route::get('/', 'PanelController@index');
-    Route::get('/panel', 'PanelController@panel')->name('panel');
+    // Route::get('/panel', 'PanelController@panel')->name('panel');
     Route::resource('/usuarios', 'UserController');
     //Route::resource('/post', 'PostController');
+  });
 });

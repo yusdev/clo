@@ -9,7 +9,7 @@
     <img style="width:100%"src="{{$post->image}}">
 
     <div class="post-content">
-      <p>{{$post->description}}</p>
+      <p>{!! $post->description !!}</p>
     </div>
 
     <div class="post-author"> Por {{$post->user->name}} {{$post->user->lastname}} </div>

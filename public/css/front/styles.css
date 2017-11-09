@@ -107,28 +107,60 @@ color: white;
 
 /* HOME * POSTEOS ------------------------------------------------------------*/
 
-.post-container{
+.post-container {
   width: 90%;
   margin: auto;
   margin-top: 40px;
 }
+#masonry{
+  column-count: 2;
+  column-gap: 15px;
+}
+#masonrycu{
+  break-inside: avoid;
+}
 
 .post{
-  display: inline-block;
-  width: 48%;
+  /*width: 48%;*/
   border: 2px dashed #ffc840;
   padding: 5px;
+  margin-bottom: 15px;
 }
 
 .post img{
   width: 100%;
 }
 
-.post section{
-  background-color: #dbdbdb;
-  text-align: center;
+.post article {
+  line-height: 0;
 }
 
+.post section{
+  line-height: 1em;
+  background-color: #dbdbdb;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom:16px;
+}
+.prepost-title {
+  font-size: 20px;
+  color: black;
+}
+.prepost-abstract{
+  color:black;
+}
+.imgs{
+  position: relative;
+}
+.tri-post{
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  bottom: -26px;
+}
+.tri-post img{
+  height: 100px;
+}
 .button{
   padding: 5px;
   background-color: black;

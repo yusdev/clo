@@ -27,12 +27,18 @@
   @foreach($posts as $post)
   <div class="post">
     <article>
-      <a href="#"><img src="{{$post->image}}"></a>
+      <a href="#">
+        <div class="imgs">
+          <img src="{{$post->image}}">
+          <div class="tri-post">
+            <img src="/images/tri.svg">
+          </div>
+        </div>
       <section>
-        <a href="#">{{$post->title}}</a>
-        <p>{{$post->abstract}}</p>
-        <a class="button" href="#">LEER MAS</a>
+        <div class="prepost-title" href="#">{{$post->title}}</div>
+        <p class="prepost-abstract">{{$post->abstract}}</p>
       </section>
+      </a>
     </article>
   </div>
  @endforeach

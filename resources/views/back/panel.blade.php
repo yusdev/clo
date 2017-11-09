@@ -6,7 +6,7 @@
 <div class="panel-menu-container">
   <div class="panel-menu">
     <ul>
-      <li><a href="#">Mi perfil</a></li>
+      <li><a href="#">Mis datos</a></li>
       <li> <a href="#">Blog</a>
           <ul class="sub-panel-menu">
             <li><a href="#">Categorias</a></li>
