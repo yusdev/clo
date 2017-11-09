@@ -13,8 +13,9 @@ class PostController extends Controller
      */
     public function index()
     {
-      $posts = Post::with('category')->paginate(10);
-      return view('front.blog')->with('posts', $posts);
+      // $users = Post::all()->paginate(10);
+      return view('back.posts');
+
     }
 
     /**

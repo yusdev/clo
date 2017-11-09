@@ -32,7 +32,7 @@ Auth::routes();
 Route::group(['prefix' => 'admin'], function(){
    Route::group(['middleware'=>'access'], function() {
     Route::get('/', 'PanelController@index');
-    // Route::get('/panel', 'PanelController@panel')->name('panel');
+
     Route::resource('/usuarios', 'UserController');
     Route::resource('post', 'PostController');
   });

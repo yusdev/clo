@@ -117,10 +117,10 @@
                                     <a href="#">Categorias</a>
                                 </li>
                                 <li>
-                                    <a href="#">Posts</a>
+                                    <a href="{{route('post.index')}}">Notas</a>
                                 </li>
                                 <li>
-                                    <a href="{{route('post.create')}}">Nuevo Post</a>
+                                    <a href="{{route('post.create')}}">Nueva nota</a>
                                 </li>
                             </ul>
                         </li>
